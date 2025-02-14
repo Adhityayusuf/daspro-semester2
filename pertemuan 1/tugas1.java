@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class tugas1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        boolean pas = false;
         char [] kode = {'A','B','D','E','F','G','H','L','N','T'};
         char [][] kota = {
             {'B','A','N','T','E','N'},
@@ -20,9 +21,11 @@ public class tugas1 {
         for (int i = 0; i < kode.length;i++){
             if (plat == kode[i]){
                 System.out.println(kota[i]);
-            } else {
-                System.out.println("kode tidak ada");
+                pas = true;
             }
+        }
+        if (pas == false){
+            System.out.println("=== KODE TIDAK ADA ===");
         }
     }
 }

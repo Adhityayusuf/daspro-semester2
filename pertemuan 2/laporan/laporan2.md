@@ -156,4 +156,8 @@ Program ini merupakan kelas main yang menjalankan class `MataKuliah13`.
 - **Menampilkan informasi `mk1`**, mengubah jumlah SKS, menambah dan mengurangi jam kuliah, lalu menampilkan kembali informasinya.  
 - **Membuat objek `mk2`** menggunakan **constructor dengan parameter**, lalu langsung menampilkan informasinya.    
 
-## LATIHAN 2   
+## LATIHAN 2     
+
+Hasil latihan dua dari class Dosen13.java dan DosenMain13.java :    
+
+![gambar](../gambar/gambar6.png)     

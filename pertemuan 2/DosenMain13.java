@@ -9,7 +9,7 @@ public class DosenMain13 {
         dsn1.tampilInformasi();
         System.out.println("lama bekerja    : " + dsn1.hitungMasaKerja(2025));
 
-        Dosen13 dsn2 = new Dosen13("adit", "242542425", false, 2006, "ctps");
+        Dosen13 dsn2 = new Dosen13("adit", "242542425", true, 2006, "ctps");
         dsn2.tampilInformasi();
         System.out.println("lama bekerja    : " + dsn2.hitungMasaKerja(2025));
     }

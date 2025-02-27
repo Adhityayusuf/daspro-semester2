@@ -161,3 +161,29 @@ Program ini merupakan kelas main yang menjalankan class `MataKuliah13`.
 Hasil latihan dua dari class Dosen13.java dan DosenMain13.java :    
 
 ![gambar](../gambar/gambar6.png)     
+
+### **Penjelasan Program `Dosen13`**  
+Kelas `Dosen13` merepresentasikan data seorang dosen dengan atribut utama seperti **ID, nama, status aktif, tahun bergabung, dan bidang keahlian**.  
+### **Fungsi dalam Kelas:**  
+1. **`tampilInformasi()`** → Menampilkan semua informasi dosen.  
+2. **`setStatusAktif(boolean status)`** → Mengubah status aktif dosen.  
+3. **`hitungMasaKerja(int thnskrg)`** → Menghitung lama masa kerja jika status aktif.  
+4. **`ubahKeahlian(String bidang)`** → Mengubah bidang keahlian dosen.  
+5. **Constructor tanpa parameter** → Inisialisasi objek kosong.  
+6. **Constructor dengan parameter** → Inisialisasi objek langsung dengan data.  
+### **Kesimpulan:**  
+Kelas ini memungkinkan pengelolaan data dosen, termasuk menampilkan informasi, mengubah status, menghitung masa kerja, dan memperbarui bidang keahlian.    
+
+### **Penjelasan Program `DosenMain13`**  
+Kelas `DosenMain13` berfungsi sebagai **program utama** untuk menguji kelas `Dosen13`.  
+### **Alur Program:**  
+1. **Membuat objek `dsn1`** tanpa menggunakan konstruktor berparameter.  
+   - Mengisi atribut manual (**nama, ID, status, tahun bergabung, bidang keahlian**).  
+   - Memanggil `tampilInformasi()` untuk menampilkan data.  
+   - Menghitung dan menampilkan **masa kerja** dengan `hitungMasaKerja(2025)`.  
+2. **Membuat objek `dsn2`** dengan konstruktor berparameter.  
+   - Mengisi atribut langsung saat instansiasi.  
+   - Memanggil `tampilInformasi()`.  
+   - Menghitung dan menampilkan **masa kerja**.  
+### **Kesimpulan:**
+Program ini mendemonstrasikan bagaimana membuat dan mengelola data dosen, baik dengan cara manual maupun menggunakan konstruktor berparameter, serta menghitung lama masa kerja dosen.

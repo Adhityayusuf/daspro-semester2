@@ -11,11 +11,11 @@ public class MahasiswaMain13 {
         mhsl.updateIpk(3.60);
         mhsl.tampilkanInformasi();
 
-        Mahasiswa13 mhs2 = new Mahasiswa13("Annisa Nabila","2141720160", 3.25,"TI 2L");
+        Mahasiswa27 mhs2 = new Mahasiswa27("Annisa Nabila","2141720160", 3.25,"TI 2L");
         mhs2.updateIpk(3.30);
         mhs2.tampilkanInformasi();
 
-        Mahasiswa13 mhs13 = new Mahasiswa13("M.Adhitya Yusuf Al-Ayyubi","244107020045", 3.72, "TI 1H");
+        Mahasiswa27 mhs13 = new Mahasiswa27("M.Adhitya Yusuf Al-Ayyubi","244107020045", 3.72, "TI 1H");
         mhs13.tampilkanInformasi();
     }
 }

@@ -1,4 +1,3 @@
-import java.util.Scanner;
 public class Dosen13 {
     public String kode;
     public String nama;
@@ -12,8 +11,11 @@ public class Dosen13 {
         this.usia = usia;
     }
 
-    public void inputData() {
-        Scanner sc= new Scanner(System.in);
-        
+    public void tampilkanData() {
+        System.out.println("Kode           : " + kode);
+        System.out.println("Nama           : " + nama);
+        System.out.println("Jenis Kelamin  : " + (jenisKelamin ? "Pria" : "Wanita"));
+        System.out.println("Usia           : " + usia);
+        System.out.println("------------------------------------");
     }
 }

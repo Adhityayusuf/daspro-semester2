@@ -3,8 +3,8 @@ public class Matakuliahdemo13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Matakuliah13[] arrayOfMatakuliah13 = new Matakuliah13[3];
-        int n;
 
+        int n;
         System.out.print("Jumlah MataKuliah : ");
         n = sc.nextInt();
         for(int i = 0; i < n; i++) {

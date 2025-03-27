@@ -1,6 +1,6 @@
 public class KampusMain13 {
     public static void main(String[] args) {
-        Kampus13[] kmp = {
+        Kampus13[] data = {
             new Kampus13("Ahmad", "220101001", 2022, 78, 82),
             new Kampus13("Budi", "220101002", 2022, 85, 88),
             new Kampus13("Cindy", "220101003", 2021, 90, 87),
@@ -12,8 +12,14 @@ public class KampusMain13 {
         };
 
         System.out.println("Data Mahasiswa : ");
-        for (Kampus13 k : kmp) {
+        for (Kampus13 k : data) {
             k.tampilkanData();
         }
+
+        System.out.println("Hasil Pencarian:");
+        System.out.println("Nilai UTS tertinggi: " + data[0].cariUtsTertinggi(data, 0, data.length - 1));
+        System.out.println("Nilai UTS terendah: " + data[0].cariUtsTerendah(data, 0, data.length - 1));
+        System.out.println("Rata-rata UAS: " + data[0].hitungRataRataUAS(data));
+        
     }
 }

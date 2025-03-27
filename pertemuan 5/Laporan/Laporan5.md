@@ -89,3 +89,13 @@ Metode `totalDC()` menggunakan Divide & Conquer dengan membagi array menjadi dua
 
 ## TUGAS     
 
+The solution is implemented in Kampus13.java and KampusMain.java, and below is screenshot of the result.       
+
+![gambar](../gambar/gambar4.5.png)      
+
+Alur Program Singkat:
+1. Inisialisasi Data : Array `data` menyimpan objek mahasiswa dengan atribut nama, NIM, tahun masuk, nilai UTS, dan nilai UAS.  
+2. Tampilkan Data : Menggunakan `tampilkanData()` untuk mencetak semua informasi mahasiswa.  
+3. Cari Nilai UTS Tertinggi & Terendah (Divide and Conquer) : `cariUtsTertinggi()` dan `cariUtsTerendah()` menggunakan rekursi untuk menemukan nilai tertinggi dan terendah.  
+4. Hitung Rata-rata UAS (Brute Force) : `hitungRataRataUAS()` menjumlahkan semua nilai UAS dan membaginya dengan jumlah mahasiswa.  
+5. Cetak Hasil : Menampilkan nilai UTS tertinggi, nilai UTS terendah, dan rata-rata UAS ke layar dan data seluruh mahasiswa.  

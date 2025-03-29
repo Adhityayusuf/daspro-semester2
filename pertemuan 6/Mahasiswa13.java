@@ -6,7 +6,6 @@ public class Mahasiswa13 {
 
     //Konstruktor default
     Mahasiswa13() {
-        
     }
 
     //Konstruktor berparameter (dibuat ada yang nama var parameter inputnya sama ada yang tidak)
@@ -22,5 +21,6 @@ public class Mahasiswa13 {
         System.out.println("Nim   : " + nim);
         System.out.println("Kelas : " + kelas);
         System.out.println("IPK   : " + ipk);
+        
     }
 }

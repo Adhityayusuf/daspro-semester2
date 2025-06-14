@@ -105,3 +105,7 @@ case 6:
 
 ## TUGAS :   
 
+![gambar](../gambar/gambar5.11.png)
+![gambar](../gambar/gambar6.11.png)
+![gambar](../gambar/gambar7.11.png)
+![gambar](../gambar/gambar8.11.png)

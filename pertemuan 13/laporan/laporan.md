@@ -95,3 +95,6 @@ public void removeFirst() {
 ```
 
 ## TUGAS :    
+![gambar](../gambar/gambar3.13.png)       
+![gambar](../gambar/gambar4.13.png)       
+![gambar](../gambar/gambar5.13.png)       

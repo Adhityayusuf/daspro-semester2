@@ -14,6 +14,14 @@ public class DLLMain {
             System.out.println("4. Hapus di akhir");
             System.out.println("5. Tampilkan data");
             System.out.println("6. Cari Mahasiswa berdasarkan NIM");
+            System.out.println("7. Tambah setelah NIM tertentu");
+            System.out.println("8. Tambah di indeks tertentu");
+            System.out.println("9. Hapus setelah NIM tertentu");
+            System.out.println("10. Hapus berdasarkan indeks");
+            System.out.println("11. Tampilkan data head (getFirst)");
+            System.out.println("12. Tampilkan data tail (getLast)");
+            System.out.println("13. Tampilkan data pada indeks tertentu");
+            System.out.println("14. Tampilkan jumlah data");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = scan.nextInt();
@@ -42,7 +50,45 @@ public class DLLMain {
                         System.out.println("Data tidak ditemukan.");
                     }
                 }
-
+                case 7 -> {
+                    System.out.print("Masukkan NIM yang akan disisipi setelahnya: ");
+                    String key = scan.nextLine();
+                    Mahasiswa13 mhs = inputMahasiswa(scan);
+                    list.insertAfter(key, mhs);
+                }
+                case 8 -> {
+                    Mahasiswa13 mhs = inputMahasiswa(scan);
+                    System.out.print("Masukkan indeks: ");
+                    int index = scan.nextInt(); scan.nextLine();
+                    list.add(mhs, index);
+                }
+                case 9 -> {
+                    System.out.print("Masukkan NIM: ");
+                    String key = scan.nextLine();
+                    list.removeAfter(key);
+                }
+                case 10 -> {
+                    System.out.print("Masukkan indeks yang akan dihapus: ");
+                    int index = scan.nextInt(); scan.nextLine();
+                    list.remove(index);
+                }
+                case 11 -> {
+                    Mahasiswa13 m = list.getFirst();
+                    if (m != null) m.tampil(); else System.out.println("List kosong.");
+                }
+                case 12 -> {
+                    Mahasiswa13 m = list.getLast();
+                    if (m != null) m.tampil(); else System.out.println("List kosong.");
+                }
+                case 13 -> {
+                    System.out.print("Masukkan indeks: ");
+                    int index = scan.nextInt(); scan.nextLine();
+                    Mahasiswa13 m = list.getIndex(index);
+                    if (m != null) m.tampil(); else System.out.println("Tidak ada data di indeks itu.");
+                }
+                case 14 -> {
+                    System.out.println("Jumlah data dalam linked list: " + list.size());
+                }
                 case 0 -> System.out.println("Keluar dari program.");
                 default -> System.out.println("Pilihan tidak valid!");
             }
@@ -62,5 +108,4 @@ public class DLLMain {
         scan.nextLine();
         return new Mahasiswa13(nim, nama, kelas, ipk);
     }
-
 }
